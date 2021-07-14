@@ -161,7 +161,58 @@
     line-height: 26px;
 }
 
+/*-----------------------------------
+          information part  
+-------------------------------------*/
+.copa-information {
+    display: flex;
+    margin-top: 80px;
+}
+.copa-info-item {
+    margin-top: 25px;
+    margin-right: 35px;
+}
+.copa-info-item h2 {
+    font-size: 37px;
+    font-weight: 700;
+}
+.copa-info-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.copa-button {
+    width: 173px;
+    background-color: #E02C6D;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.copa-button button {
+    padding: 20px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff ;
+    background-color: #E02C6D;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.copa-btn {
+    border: none;
+    
+}
+.copa-button i {
+    color: #fff;
+    font-size: 16px;
+}
 
+.copa-image img {
+    height: 427px;
+    width: 567px;
+}
+.image-item {
+    width: 100%;
+}
 
  /*--------------------- 
        media quaries 
@@ -212,6 +263,24 @@
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
         margin-left: 25px;
+    }
+    .copa-information {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        grid-row-gap: 30px;
+        align-items: center;
+        margin-top: 60px;
+    }
+    .copa-info-item {
+        height: 299px;
+        width: 330px;
+    }
+    .copa-info-item h2 {
+        font-size: 34px;
+    }
+    .copa-image img {
+        height: 246px;
+        width: 330px;
     }
     
  }
