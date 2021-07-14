@@ -1,3 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
 /*--------------------------
          common styles 
  ----------------------------*/
@@ -20,4 +24,131 @@
  }
  .wrapper {
      width: 960px;
+     margin: 0 auto;
  }
+ body {
+    font-family: 'Poppins', sans-serif;
+ }
+ /* header part css */
+
+ .header-bg {
+     background-color: #2D25A0;
+     height: 605px;
+ }
+ .nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 38px;
+ }
+ .menu ul{
+     display: flex;
+ }
+ .menu li {
+     padding: 10px 18px;
+ }
+ .menu li:first-child {
+     padding-left: 0;
+ }
+ .menu li a {
+     color: #fff;
+     font-size: 16px;
+ }
+ .button {
+     display: flex;
+     flex-direction: row;
+     width: 123px;
+     height: 44px;
+     background-color: #E02C6D;
+     justify-content: center;
+     align-items: center;
+ }
+ .button img {
+    width: 24px;
+    height: 24px;
+    margin-top: 7px;
+}
+ .btn-submit{
+     margin-left: 8px;
+     border: none;
+     background-color: #E02C6D;
+     font-size: 16px;
+     color: #fff;
+     text-decoration: none;
+     cursor: pointer; 
+ }
+ .heading-details {
+     display: flex;
+     padding-top: 50px;
+ }
+ .heading-title h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #fff;
+    margin-top: 110px;
+ }
+ .header-icon {
+     background-color: #E02C6D;
+     height: 35px;
+     width: 148px;
+     text-align: center;
+     padding-top: 10px;
+     margin-top: 27px;
+ }
+ .header-icon button {
+     font-size: 16px;
+     color: #fff;
+     margin-right: 10px;
+ }
+ .header-btn {
+     border: none;
+     background-color: #E02C6D;
+
+ }
+ .header-icon i {
+     color: #fff;
+     font-size: 16px;
+ }
+ .heading-banner img {
+     height: 440px;
+     width: 556px;
+ }
+ .heading-banner {
+     margin-left: 102px;
+ }
+
+
+ /*--------------------- 
+       media quaries 
+------------------------*/
+
+ /* mobile devices */
+ @media only screen and (max-width:688px) {
+     .wrapper {
+         width: 100%;
+     }
+     .header-bg {
+        background-color: #2D25A0;
+        height: 690px;
+    }
+    .heading-details {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+    .heading-title {
+        margin-left: 50px;
+        margin-top: 0px;
+    }
+    .heading-banner {
+        padding-top: 50px;
+        margin-left: 0px;
+    }
+    .heading-banner img{
+        height: 260px;
+        width: 330px;
+    }
+ }
+ 
