@@ -21,6 +21,12 @@
  }
  .full-wrapper {
      width: 100%;
+     
+ }
+ main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
  }
  .wrapper {
      width: 960px;
@@ -29,11 +35,14 @@
  body {
     font-family: 'Poppins', sans-serif;
  }
- /* header part css */
+  /* --------------------
+       header part css 
+    -----------------------   */
 
  .header-bg {
      background-color: #2D25A0;
      height: 605px;
+     width: 100%;
  }
  .nav {
      display: flex;
@@ -53,6 +62,10 @@
  .menu li a {
      color: #fff;
      font-size: 16px;
+     transition: all 1s ease-in-out;
+ }
+ .menu li a:hover {
+     color: cyan;
  }
  .button {
      display: flex;
@@ -80,13 +93,12 @@
  .heading-details {
      display: flex;
      padding-top: 50px;
+     align-items: center;
  }
  .heading-title h1 {
     font-size: 40px;
     font-weight: 700;
-    line-height: 46px;
     color: #fff;
-    margin-top: 110px;
  }
  .header-icon {
      background-color: #E02C6D;
@@ -111,7 +123,7 @@
      font-size: 16px;
  }
  .heading-banner img {
-     height: 440px;
+     height: 438px;
      width: 556px;
  }
  .heading-banner {
@@ -120,15 +132,14 @@
   /*--------------------- 
        main section css 
 ------------------------*/
-.players-main {
+.player-main {
     margin-top: 50px;
 }
 .player-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    
+    grid-row-gap: 30px;  
 }
 .players {
     box-shadow: 5px 5px 15px 20px #f0eded;
@@ -136,15 +147,8 @@
     border-radius: 5px;
     
 }
-/* .players:hover .player-image {
-    transform: scale(1.3);
-    
-}
-.player-image {
-    transition: transform 2s ease;
-} */
 .player-image img {
-    width: 300px;
+    width: 270px;
     height: 255px;
     border-radius: 5px;
 }
@@ -271,12 +275,8 @@
     .heading-details {
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
-        padding-top: 0px;
-        padding-bottom: 50px;
-    }
-    .heading-title {
-        margin-left: 50px;
-        margin-top: 0px;
+        padding-top: 100px;
+        margin-left: 20px;
     }
     .heading-banner {
         padding-top: 50px;
